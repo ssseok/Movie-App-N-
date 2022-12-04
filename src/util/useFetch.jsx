@@ -5,7 +5,7 @@ export default function useFetch(url) {
   const [movies, setMovies] = useState([]);
   const movieAPI = async () => {
     const json = await (await fetch(url)).json();
-    setMovies(json.data.movie);
+    setMovies(json.data.movies);
 
     setLoading(false);
   };
