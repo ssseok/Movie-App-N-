@@ -3,9 +3,10 @@ import Detail from "./pages/Detail";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 function App() {
+  const path = process.env.PUBLIC_URL + "/";
   const router = createBrowserRouter([
     {
-      path: "/",
+      path,
       element: <Home />,
       errorElement: <NotFound />,
     },
